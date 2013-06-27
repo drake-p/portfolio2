@@ -14,17 +14,24 @@ p {
   line-height: 1.25em; /* 20px */
   margin: 0 0 1.25em 0;
 }
+.class-for-48px,
+header h1 {
+  font-size: 3em; /* 48px */
+  line-height: 1.25em; /* 60px */
+  margin-top: 0.4167em;
+  margin-bottom: 0em;
+}
 /* 28px - The quick brown fox jumps over the lazy dog */
 .class-for-28px,
-article .year,
-article h2 { 
+article .year { 
   font-size: 1.75em; /* 28px */
   line-height: 1.4286em; /* 40px */
   margin-top: 0.7143em;
   margin-bottom: 0em;
 }
 /* 24px - The quick brown fox jumps over the lazy dog */
-.class-for-24px {
+.class-for-24px,
+article h2 {
   font-size: 1.5em; /* 24px */
   line-height: 1.6667em; /* 40px */
   margin-top: 0.8333em;
@@ -46,6 +53,7 @@ article h2 {
 }
 /* 18px - The quick brown fox jumps over the lazy dog */
 .class-for-18px,
+header em,
 article .month {
   font-size: 1.125em; /* 18px */
   line-height: 1.1111em; /* 20px */

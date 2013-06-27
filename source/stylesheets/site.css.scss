@@ -5,15 +5,32 @@ $darkgrey: #999;
 // }
 
 .accent-font,
-.date {
-	font-family: Raleway;
+header h1,
+article .date {
+	font-family: "Raleway";
 }
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
+header {
+	text-align: center;
+	padding: 2em 0;
+	h1 {
+		font-weight: normal;
+		margin-bottom: 0.4167em;
+		margin-top: 0em;
+	}
+	em {
+		font-style: normal;
+		display: block;
+		font-family: "Adobe Garamond Pro";
+	}
+}
 article {
 	overflow: auto;
+	padding-bottom: 4em;
+	position: relative;
 	img {
 		display: block;
 		margin: 0 auto;
@@ -24,12 +41,13 @@ article {
 		}
 	}
 	.date {
-		* {
+		.year,
+		.month {
 			display: block;
 			text-align: right;
 		}
 		.month {
-			margin-top: 0;
+			margin-top: 0;			
 		}
 	}
 	h2 {
@@ -47,7 +65,8 @@ article {
 		li {
 			display: inline-block;
 			&:before {
-				content: ". ";
+				content: "\00B7";
+				padding-right: 2px;
 			}
 			&:first-of-type:before {
 				content: "";
@@ -61,4 +80,5 @@ article+hr {
 	height: 1px;
 	border: 0;
 	border-top: 1px solid $darkgrey;
+	display: none;
 }

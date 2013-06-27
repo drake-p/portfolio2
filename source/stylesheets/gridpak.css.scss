@@ -48,7 +48,7 @@ img {
     
     ----------------------------------------------------------------------------- */	
     
-	@media screen and (min-width: 0px) and (max-width: 399px) {
+	@media screen and (min-width: 0px) and (max-width: 569px) {
         
         .col {
             margin-left:3%;
@@ -67,25 +67,22 @@ img {
             @include span_first;
         }
         
-        
-        /*
-        Add your semantic classnames in alongside their corresponding spans here. e.g.
-        
-        .span_3,
-        .my_semantic_class_name {
-            ...
-        }
-        
-        */
-        .span_1 {
+        .span_1,
+        article .double_img,
+        article .date {
             @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_2 {
+        .span_2,
+        article .description {
             @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_3 {
+        .span_3,
+        article .single_img {
             @include span_first;
             width:100%;
+        }
+        article .date {
+            margin-left: 0;
         }
     }
 
@@ -101,7 +98,7 @@ img {
     
     ----------------------------------------------------------------------------- */	
     
-	@media screen and (min-width: 400px) {
+	@media screen and (min-width: 570px) {
         
         .col {
             margin-left:2%;
@@ -121,26 +118,26 @@ img {
         }
         
         
-        .span_1,
-        article .date {
+        .span_1 {
             @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_2 {
+        .span_2,
+        article .date,
+        article .double_img,
+        article .description {
             @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_3,
-        article .double_img {
+        .span_3 {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_4 {
+        .span_4,
+        article .single_img {
             @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_5,
-        article .description {
+        .span_5 {
             @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_6,
-        article .single_img {
+        .span_6 {
             @include span_first;
             width:100%;
         }
