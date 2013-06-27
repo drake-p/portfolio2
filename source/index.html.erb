@@ -1,41 +1,24 @@
 ---
+pageable: true
+per_page: 10
 ---
+<% if paginate %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
 
-<div class="container">
-	<article>
-		<div class="row">
-			<div class="col single_img"><img src="images/samples/2013-4-healthcare-dash.jpg" alt="Dashboard for a healthcare organization"></div>
-		</div><!-- .row -->
-		<div class="row">
-			<div class="col date"><span class="year">2013</span><span class="month">April</span></div>
-			<div class="col description">
-				<h2>Physician accountability dashboard</h2>
-				<p>A health care organization (name changed for privacy) wanted to bring their physician reporting system into the modern era.  My task was to create an artifact envisioning what such a modern, web-based dashboard might look like.</p>
-				<ul class="tools">
-					<li>Photoshop 6</li>
-					<li>HighCharts</li>
-					<li>PlaceIt by Breezi</li>
-				</ul>
-			</div><!-- .col.description -->
-		</div><!-- .row -->
-	</article>
-	<hr>
-	<article>
-		<div class="row">
-			<div class="col single_img"><img src="images/samples/2013-3-design-funnel.jpg" alt="Design funnel infographic" class="noshade"></div>
-		</div><!-- .row -->
-		<div class="row">
-			<div class="col date"><span class="year">2013</span><span class="month">March-<br>April</span></div>
-			<div class="col description">
-				<h2>Design funnel infographic</h2>
-				<p>As an educational artifact to be used in blog posts, conference talks, and on a poster, my employer asked for a visualization of the “design funnel” described in <cite>The Design of Business</cite> by Roger Martin.</p>
-				<ul class="tools">
-					<li>Pencil &amp; paper</li>
-					<li>Wacom tablet</li>
-					<li>Photoshop 6</li>
-				</ul>
-			</div><!-- .col.description -->
-		</div><!-- .row -->
-	</article>
-	<hr>
-</div><!-- .container -->
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<% page_articles.each_with_index do |article, i| %>
+  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <%= article.body %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
