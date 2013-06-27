@@ -1,3 +1,4 @@
+
 /**
  * Gridpak Beta SCSS 
  *
@@ -34,6 +35,9 @@
     margin-left:0;
 }
  
+img {
+    max-width: 100%;
+}
 
     /* 1. 3 Column Grid 0px - 399px 
     ----------------------------------------------------------------------------- 
@@ -117,22 +121,26 @@
         }
         
         
-        .span_1 {
+        .span_1,
+        article .date {
             @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_2 {
             @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_3 {
+        .span_3,
+        article .double_img {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_4 {
             @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_5 {
+        .span_5,
+        article .description {
             @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_6 {
+        .span_6,
+        article .single_img {
             @include span_first;
             width:100%;
         }

@@ -1,0 +1,70 @@
+ 
+/**
+ * CSS with Vertical Rhythm, a tool by drewish.com 
+ **/
+
+
+body {
+  font-size: 16px;
+  font-family: "Adobe Garamond Pro", Georgia, serif;
+}
+
+p {
+  font-size: 1em; /* 16px */
+  line-height: 1.25em; /* 20px */
+  margin: 0 0 1.25em 0;
+}
+/* 28px - The quick brown fox jumps over the lazy dog */
+.class-for-28px,
+article .year,
+article h2 { 
+  font-size: 1.75em; /* 28px */
+  line-height: 1.4286em; /* 40px */
+  margin-top: 0.7143em;
+  margin-bottom: 0em;
+}
+/* 24px - The quick brown fox jumps over the lazy dog */
+.class-for-24px {
+  font-size: 1.5em; /* 24px */
+  line-height: 1.6667em; /* 40px */
+  margin-top: 0.8333em;
+  margin-bottom: 0em;
+}
+/* 22px - The quick brown fox jumps over the lazy dog */
+.class-for-22px {
+  font-size: 1.375em; /* 22px */
+  line-height: 1.8182em; /* 40px */
+  margin-top: 0.9091em;
+  margin-bottom: 0em;
+}
+/* 20px - The quick brown fox jumps over the lazy dog */
+.class-for-20px {
+  font-size: 1.25em; /* 20px */
+  line-height: 1em; /* 20px */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+/* 18px - The quick brown fox jumps over the lazy dog */
+.class-for-18px,
+article .month {
+  font-size: 1.125em; /* 18px */
+  line-height: 1.1111em; /* 20px */
+  margin-top: 1.1111em;
+  margin-bottom: 0em;
+}
+/* 16px - The quick brown fox jumps over the lazy dog */
+.class-for-16px,
+article .tools {
+  font-size: 1em; /* 16px */
+  line-height: 1.25em; /* 20px */
+  margin-top: 1.25em;
+  margin-bottom: 0em;
+}
+/* 14px - The quick brown fox jumps over the lazy dog */
+.class-for-14px {
+  font-size: 0.875em; /* 14px */
+  line-height: 1.4286em; /* 20px */
+  margin-top: 1.4286em;
+  margin-bottom: 0em;
+}
+

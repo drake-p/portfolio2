@@ -1,6 +1,7 @@
-@charset "utf-8";
+//= require_tree .
+//= stub normalize
 
-body {
+/*body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
   font-family: sans-serif; }
@@ -52,4 +53,4 @@ h1 {
   to {
     -webkit-transform: scale(1);
   }
-}
+}*/
