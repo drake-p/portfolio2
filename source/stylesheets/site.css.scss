@@ -2,15 +2,11 @@
 
 $darkgrey: #999;
 
-// * {
-// 	outline: 1px solid;
-// }
-
 .accent-font,
 header h1,
 article .date,
 footer {
-	font-family: "Raleway";
+	font-family: "raleway";
 }
 .container {
     margin: 0 auto;
@@ -26,7 +22,7 @@ header {
 	em {
 		font-style: normal;
 		display: block;
-		font-family: "Adobe Garamond Pro";
+		font-family: "adobe-garamond-pro";
 	}
 }
 article {
